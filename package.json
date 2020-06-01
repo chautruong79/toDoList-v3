@@ -1,17 +1,21 @@
 {
   "name": "todolist-v3",
+  "homepage": "https://chautruong79.github.io/toDoList-v3",
   "version": "1.0.0",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "gh-pages": "^3.0.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-scripts": "3.2.0"
+    "react-scripts": "^3.4.1"
   },
   "devDependencies": {
     "typescript": "3.3.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
